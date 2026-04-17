@@ -75,7 +75,7 @@ export default function Navbar() {
         {/* Right side */}
         <div className="flex items-center gap-4">
           <a
-            href="/Michael_Go_CV.pdf"
+            href={import.meta.env.BASE_URL + 'Michael_Go_CV.pdf'}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-white/50 transition hover:text-white"

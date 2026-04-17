@@ -37,7 +37,7 @@ export default function Hero() {
             Contact Me
           </button>
           <a
-            href="/Michael_Go_CV.pdf"
+            href={import.meta.env.BASE_URL + 'Michael_Go_CV.pdf'}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-md border border-indigo-500/50 px-5 py-2.5 text-sm font-medium text-indigo-300 transition hover:bg-indigo-500/10 hover:border-indigo-400"

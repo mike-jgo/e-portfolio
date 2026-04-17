@@ -11,7 +11,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 flex justify-center lg:justify-start">
             <img
-              src="/1x1_Michael.jpg"
+              src={import.meta.env.BASE_URL + '1x1_Michael.jpg'}
               alt="Michael Go — Software Developer & Data Scientist"
               loading="lazy"
               width={320}
