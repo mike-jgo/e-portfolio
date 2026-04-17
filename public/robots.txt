@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mike-jgo.github.io/e-portfolio/sitemap.xml
