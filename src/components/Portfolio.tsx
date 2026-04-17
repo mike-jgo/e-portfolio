@@ -17,19 +17,19 @@ export default function Portfolio() {
           <ProjectCard
             title="Inventory System"
             category="Full-Stack"
-            description="This is a full-stack inventory management system built with Laravel and Vue.js. It allows users to manage their inventory items, track stock levels, and generate reports."
+            description="A full-stack inventory management system for tracking stock levels and generating reports. Built with Laravel and Vue.js using Inertia.js for seamless SPA navigation."
             tags={['Laravel', 'Vue.js', 'Inertia.js']}
           />
           <ProjectCard
             title="Thesis"
             category="Research"
-            description="This is a research project that explores the use of machine learning for automatic personality recognition with Filipino Twitter data."
+            description="Research on automatic personality recognition using machine learning on Filipino Twitter data. Combines classical ML with deep learning approaches for text classification."
             tags={['Python', 'Scikit-learn', 'TensorFlow']}
           />
           <ProjectCard
             title="This E-portfolio Website"
             category="Front-end"
-            description="This is a portfolio website built with React and Tailwind CSS."
+            description="Personal portfolio built with React and Tailwind CSS, featuring scroll-triggered animations, a responsive layout, and a skills showcase."
             tags={['React', 'Tailwind CSS']}
             links={[
               { label: 'GitHub', url: 'https://github.com/mike-jgo/e-portfolio' },

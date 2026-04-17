@@ -11,7 +11,7 @@ export default function Contact() {
     navigator.clipboard.writeText(EMAIL).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    });
+    }).catch(() => {});
   }
 
   return (

@@ -25,7 +25,7 @@ export default function Skills() {
                   return (
                     <div
                       key={skill}
-                      className="flex flex-col items-center gap-2 rounded-xl bg-zinc-800 px-5 py-4 w-24 border border-white/5 hover:border-white/20 transition-colors"
+                      className="flex flex-col items-center gap-2 rounded-xl bg-zinc-800 px-5 py-4 w-28 border border-white/5 hover:border-white/20 transition-colors"
                     >
                       <Icon style={{ color: entry.color }} className="text-3xl shrink-0" />
                       <span className="text-xs text-white/60 text-center leading-tight">{skill}</span>
