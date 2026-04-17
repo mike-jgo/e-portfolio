@@ -1,12 +1,23 @@
-import Hero from "./components/Hero";
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Portfolio from './components/Portfolio';
+import About from './components/About';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="bg-zinc-900">
+    <>
+      <Navbar />
+      <main className="pt-14">
         <Hero />
-      </body>
-    </html>
+        <Portfolio />
+        <About />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
-
