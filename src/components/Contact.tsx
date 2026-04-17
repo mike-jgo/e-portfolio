@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useFadeIn } from '../hooks/useFadeIn';
+import { scrollTo } from '../lib/scrollTo';
 
 const EMAIL = 'michaeljgo33@gmail.com';
 
@@ -28,7 +29,7 @@ export default function Contact() {
           <span className="text-sm text-white/80 break-all">{EMAIL}</span>
           <button
             onClick={copyEmail}
-            className="rounded-md border border-white/20 px-3 py-1 text-xs text-white/60 transition hover:bg-white/10 hover:text-white"
+            className="rounded-md border border-white/20 px-3 py-1 text-xs text-white/60 transition hover:bg-white/10 hover:text-white cursor-pointer"
           >
             {copied ? 'Copied!' : 'Copy'}
           </button>
@@ -56,15 +57,15 @@ export default function Contact() {
 
         {/* Back to top */}
         <div className="mt-16 flex justify-center">
-          <a
-            href="#hero"
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:bg-white/5"
+          <button
+            onClick={() => scrollTo('hero')}
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:bg-white/5 cursor-pointer"
             aria-label="Back to top"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-6 w-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </section>

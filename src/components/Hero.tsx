@@ -1,3 +1,5 @@
+import { scrollTo } from '../lib/scrollTo';
+
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -22,18 +24,18 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <a
-            href="#portfolio"
-            className="rounded-md bg-white px-5 py-2.5 text-sm font-medium text-zinc-900 transition hover:bg-white/90"
+          <button
+            onClick={() => scrollTo('portfolio')}
+            className="rounded-md bg-white px-5 py-2.5 text-sm font-medium text-zinc-900 transition hover:bg-white/90 cursor-pointer"
           >
             View Projects
-          </a>
-          <a
-            href="#contact"
-            className="rounded-md border border-white/20 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/5"
+          </button>
+          <button
+            onClick={() => scrollTo('contact')}
+            className="rounded-md border border-white/20 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/5 cursor-pointer"
           >
             Contact Me
-          </a>
+          </button>
           <a
             href="/Michael_Go_CV.pdf"
             target="_blank"

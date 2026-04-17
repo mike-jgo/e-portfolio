@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { scrollTo } from '../lib/scrollTo';
 
 const sections = ['portfolio', 'about', 'skills', 'contact'] as const;
 type Section = typeof sections[number];
@@ -40,7 +41,7 @@ export default function Navbar() {
   }, []);
 
   function linkClass(id: Section) {
-    return `text-sm transition ${
+    return `text-sm transition cursor-pointer ${
       active === id ? 'text-white' : 'text-white/50 hover:text-white'
     }`;
   }
@@ -57,18 +58,18 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo — left */}
-        <a href="#hero" className="flex items-center" aria-label="Back to top">
+        <button onClick={() => scrollTo('hero')} className="flex items-center cursor-pointer" aria-label="Back to top">
           <span className="rounded border border-white/30 px-2 py-1 text-xs font-bold tracking-widest text-white transition hover:border-white/60 hover:bg-white/5">
             MJG
           </span>
-        </a>
+        </button>
 
         {/* Links — center, hidden on mobile */}
         <div className="hidden md:flex items-center gap-10">
-          <a href="#portfolio" className={linkClass('portfolio')}>Projects</a>
-          <a href="#about" className={linkClass('about')}>About</a>
-          <a href="#skills" className={linkClass('skills')}>Skills</a>
-          <a href="#contact" className={linkClass('contact')}>Contact</a>
+          <button onClick={() => scrollTo('portfolio')} className={linkClass('portfolio')}>Projects</button>
+          <button onClick={() => scrollTo('about')} className={linkClass('about')}>About</button>
+          <button onClick={() => scrollTo('skills')} className={linkClass('skills')}>Skills</button>
+          <button onClick={() => scrollTo('contact')} className={linkClass('contact')}>Contact</button>
         </div>
 
         {/* Right side */}
@@ -84,7 +85,7 @@ export default function Navbar() {
 
           {/* Hamburger — mobile only */}
           <button
-            className="md:hidden text-white/50 transition hover:text-white"
+            className="md:hidden text-white/50 transition hover:text-white cursor-pointer"
             onClick={() => setMenuOpen((o) => !o)}
             aria-label="Toggle menu"
           >
@@ -104,10 +105,10 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-white/10 px-6 py-4 flex flex-col gap-5 bg-zinc-900/95">
-          <a href="#portfolio" onClick={closeMenu} className={linkClass('portfolio')}>Projects</a>
-          <a href="#about" onClick={closeMenu} className={linkClass('about')}>About</a>
-          <a href="#skills" onClick={closeMenu} className={linkClass('skills')}>Skills</a>
-          <a href="#contact" onClick={closeMenu} className={linkClass('contact')}>Contact</a>
+          <button onClick={() => { scrollTo('portfolio'); closeMenu(); }} className={linkClass('portfolio')}>Projects</button>
+          <button onClick={() => { scrollTo('about'); closeMenu(); }} className={linkClass('about')}>About</button>
+          <button onClick={() => { scrollTo('skills'); closeMenu(); }} className={linkClass('skills')}>Skills</button>
+          <button onClick={() => { scrollTo('contact'); closeMenu(); }} className={linkClass('contact')}>Contact</button>
         </div>
       )}
     </header>
