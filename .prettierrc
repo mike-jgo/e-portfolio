@@ -1,0 +1,27 @@
+{
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "overrides": [
+        {
+            "files": [
+                "*.tsx",
+                "*.ts",
+                "*.json",
+                "*.js",
+                "*.jsx",
+                "*.html",
+                "*.css",
+                "*.scss",
+                "*.md",
+                "*.yml",
+                "*.yaml"
+            ],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}
