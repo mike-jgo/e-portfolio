@@ -2,22 +2,231 @@
 <html lang="en" class="scroll-smooth bg-zinc-900">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/e-portfolio/favicon.svg" />
+    <meta name="theme-color" content="#18181b" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Michael Go — Software Developer &amp; Data Scientist | Philippines</title>
+    <meta name="description" content="Portfolio of Michael Go, a final-year BS CS student and software developer specialising in React, Vue 3, Laravel, Python, and data science. Based in Quezon City, Philippines." />
+    <meta name="keywords" content="Michael Go, software developer, data scientist, full-stack developer, React developer, Philippines, Quezon City, Vue.js, Laravel, Python, TypeScript, Node.js, Supabase, Tailwind CSS, machine learning, portfolio" />
+    <meta name="author" content="Michael Go" />
+    <link rel="canonical" href="https://mike-jgo.github.io/e-portfolio/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Michael Go — Portfolio" />
+    <meta property="og:locale" content="en_PH" />
+    <meta property="og:url" content="https://mike-jgo.github.io/e-portfolio/" />
+    <meta property="og:title" content="Michael Go — Software Developer &amp; Data Scientist" />
+    <meta property="og:description" content="Portfolio of Michael Go, a final-year BS CS student and software developer specialising in React, Vue 3, Laravel, Python, and data science. Based in Quezon City, Philippines." />
+    <meta property="og:image" content="https://mike-jgo.github.io/e-portfolio/preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Michael Go — Software Developer &amp; Data Scientist portfolio preview" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Michael Go — Software Developer &amp; Data Scientist" />
+    <meta name="twitter:description" content="Portfolio of Michael Go, a final-year BS CS student and software developer specialising in React, Vue 3, Laravel, Python, and data science. Based in Quezon City, Philippines." />
+    <meta name="twitter:image" content="https://mike-jgo.github.io/e-portfolio/preview.jpg" />
+    <meta name="twitter:image:alt" content="Michael Go — Software Developer &amp; Data Scientist portfolio preview" />
+
+    <!-- JSON-LD Person schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Go",
+      "jobTitle": "Software Developer & Data Scientist",
+      "url": "https://mike-jgo.github.io/e-portfolio/",
+      "image": "https://mike-jgo.github.io/e-portfolio/1x1_Michael.jpg",
+      "sameAs": [
+        "https://github.com/mike-jgo",
+        "https://linkedin.com/in/michaeljgo"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Quezon City",
+        "addressCountry": "PH"
+      },
+      "knowsAbout": [
+        "React",
+        "Vue.js",
+        "TypeScript",
+        "Node.js",
+        "Laravel",
+        "Python",
+        "Supabase",
+        "Tailwind CSS",
+        "TensorFlow",
+        "Scikit-learn",
+        "Machine Learning",
+        "Data Science"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael Go — Software Developer & Data Scientist</title>
-    <meta name="description" content="Portfolio of Michael Go — software developer and data scientist building full-stack applications and machine learning pipelines." />
-    <meta property="og:title" content="Michael Go — Software Developer & Data Scientist" />
-    <meta property="og:description" content="Portfolio of Michael Go — software developer and data scientist building full-stack applications and machine learning pipelines." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Michael Go — Software Developer & Data Scientist" />
-    <meta name="twitter:description" content="Portfolio of Michael Go — software developer and data scientist building full-stack applications and machine learning pipelines." />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!--
+        Static pre-render for crawlers and social preview bots.
+        React's createRoot().render() replaces this entirely when JS loads.
+      -->
+      <header>
+        <nav>
+          <a href="#hero">Home</a>
+          <a href="#portfolio">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="hero">
+          <p>Hello, I'm Michael.</p>
+          <h1>Software Developer &amp; Data Scientist</h1>
+          <p>I build data-driven applications from full-stack web apps to machine learning pipelines.</p>
+          <a href="#portfolio">View Projects</a>
+          <a href="#contact">Contact Me</a>
+          <a href="/e-portfolio/Michael_Go_CV.pdf" rel="noopener noreferrer">Resume</a>
+        </section>
+
+        <section id="portfolio">
+          <h2>Projects</h2>
+          <p>A mix of full-stack applications, machine learning, and research projects.</p>
+
+          <article>
+            <h3>Inventory System</h3>
+            <p>Full-Stack</p>
+            <p>A full-stack inventory management system for tracking stock levels and generating reports. Built with Laravel and Vue.js using Inertia.js for seamless SPA navigation.</p>
+            <p>Laravel · Vue.js · Inertia.js</p>
+          </article>
+
+          <article>
+            <h3>Thesis</h3>
+            <p>Research</p>
+            <p>Research on automatic personality recognition using machine learning on Filipino Twitter data. Combines classical ML with deep learning approaches for text classification.</p>
+            <p>Python · Scikit-learn · TensorFlow</p>
+          </article>
+
+          <article>
+            <h3>This E-portfolio Website</h3>
+            <p>Front-end</p>
+            <p>Personal portfolio built with React and Tailwind CSS, featuring scroll-triggered animations, a responsive layout, and a skills showcase.</p>
+            <p>React · Tailwind CSS</p>
+            <a href="https://github.com/mike-jgo/e-portfolio" rel="noopener noreferrer">GitHub</a>
+          </article>
+
+          <article>
+            <h3>Fitlog</h3>
+            <p>Full-Stack · PWA</p>
+            <p>A progressive web app for tracking workouts and visualizing fitness progress. Features authentication, a Supabase backend, and data charts. Deployed to GitHub Pages.</p>
+            <p>React · Vite · Supabase · Tailwind CSS · Recharts</p>
+            <a href="https://github.com/mike-jgo/gym-app" rel="noopener noreferrer">GitHub</a>
+            <a href="https://mike-jgo.github.io/gym-app" rel="noopener noreferrer">Live</a>
+          </article>
+
+          <article>
+            <h3>Basket</h3>
+            <p>Full-Stack · Productivity</p>
+            <p>A TypeScript grocery tracker with a React frontend and a Google Apps Script + Sheets serverless backend. Uses custom hooks, a service layer, and environment-based config.</p>
+            <p>React · TypeScript · Vite · Google Apps Script</p>
+            <a href="https://github.com/mike-jgo/basket" rel="noopener noreferrer">GitHub</a>
+          </article>
+
+          <article>
+            <h3>Maguey Monitor</h3>
+            <p>Tools · Web3</p>
+            <p>A blockchain farming dashboard that tracks on-chain token yields and exports reports. Built with a Node.js/Express backend, ethers.js for contract interactions, and a REST API.</p>
+            <p>Node.js · Express · ethers.js · Web3</p>
+          </article>
+
+          <article>
+            <h3>Canvas Discord Bot</h3>
+            <p>Tools · Automation</p>
+            <p>A Discord bot that syncs Canvas LMS course announcements and deadlines to a server channel. Uses async scheduling, deduplication, and structured logging.</p>
+            <p>Python · Discord.py · Canvas API · APScheduler</p>
+          </article>
+        </section>
+
+        <section id="about">
+          <h2>About Me</h2>
+          <img
+            src="/e-portfolio/1x1_Michael.jpg"
+            alt="Michael Go — Software Developer &amp; Data Scientist"
+            width="320"
+            height="320"
+          />
+          <p>
+            Currently in my final year at De La Salle University, taking up a
+            Bachelor's Degree in Computer Science, majoring in Software
+            Technology and minoring in Data Science. I am driven by the belief
+            that technology should act as a spark for human intelligence,
+            empowering users to do more with their own heads than having
+            dependency on machines.
+          </p>
+          <p>
+            I have a passion for creating applications that improve the quality
+            of life of people. Especially in places where technology should be
+            readily available but is inaccessible due to financial constraints
+            or a lack of familiarity.
+          </p>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+          <h3>Frontend</h3>
+          <ul>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Vue.js</li>
+            <li>Tailwind CSS</li>
+            <li>Vite</li>
+          </ul>
+          <h3>Backend</h3>
+          <ul>
+            <li>Python</li>
+            <li>Laravel</li>
+            <li>Node.js</li>
+            <li>Express</li>
+          </ul>
+          <h3>Data &amp; ML</h3>
+          <ul>
+            <li>TensorFlow</li>
+            <li>Scikit-learn</li>
+          </ul>
+          <h3>Tools &amp; Cloud</h3>
+          <ul>
+            <li>Supabase</li>
+            <li>Git</li>
+            <li>ethers.js</li>
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Get in Touch</h2>
+          <p>I'm currently open to new opportunities. Whether it's a question or a project, feel free to reach out.</p>
+          <a href="mailto:michaeljgo33@gmail.com">michaeljgo33@gmail.com</a>
+          <a href="https://linkedin.com/in/michaeljgo" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/mike-jgo" rel="noopener noreferrer">GitHub</a>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Michael Go. All rights reserved.</p>
+      </footer>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
