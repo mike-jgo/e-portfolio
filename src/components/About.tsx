@@ -12,7 +12,10 @@ export default function About() {
           <div className="lg:col-span-5 flex justify-center lg:justify-start">
             <img
               src="/1x1_Michael.jpg"
-              alt="Michael"
+              alt="Michael Go — Software Developer & Data Scientist"
+              loading="lazy"
+              width={320}
+              height={320}
               className="h-64 w-64 lg:h-80 lg:w-80 rounded-2xl object-cover shadow-2xl border border-white/10"
             />
           </div>
