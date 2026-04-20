@@ -107,10 +107,6 @@ def new_page():
     c.rect(0, 0, W, H, fill=1, stroke=0)
     c.restoreState()
     y = H - MT
-    # Continuation header: name centered
-    draw_para('Michael Joseph L. Go', S('name2', fontName='Times-Bold', fontSize=12,
-              textColor=BLACK, leading=14, alignment=1), 3*mm)
-
 
 # ── HEADER ────────────────────────────────────────────────────────────────────
 
@@ -288,9 +284,9 @@ section('Skills &amp; Interests')
 
 skill_lines = [
     ('Technical',
-     'Python, Java, JavaScript, TypeScript (proficient); React, Vue 3, Tailwind CSS, Vite, Inertia.js; '
+     'Python, Java, JavaScript, React, Vue 3, Tailwind CSS, Vite, Inertia.js'
      'Node.js, Express.js, Laravel, Supabase; MySQL, MongoDB; Pandas, NumPy, Scikit-learn, TensorFlow; '
-     'Git, Selenium, Cypress, Mocha, REST Application Programming Interfaces'),
+     'Git, Selenium, Cypress, Mocha'),
     ('Design',
      'Figma; User Interface and User Experience Design'),
     ('Methodologies',
