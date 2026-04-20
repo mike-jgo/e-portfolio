@@ -167,9 +167,9 @@ role_line('Information Technology and Administrative Officer, Part-Time', 'June 
 for b in [
     'Administered point-of-sale systems, corporate email, and payment workflows across a 10-employee restaurant operation '
     'as the sole technical point of contact.',
-    'Started migration of the cheque issuance process from manual handwriting to an automated printed system, reducing '
+    'Led migration of the cheque issuance process from manual handwriting to an automated printed system, reducing '
     'processing time and eliminating transcription errors.',
-    'Started an ongoing rollout of an updated point-of-sale platform to smaller branch locations, coordinating '
+    'Initiated an ongoing rollout of an updated point-of-sale platform to smaller branch locations, coordinating '
     'setup, staff training, and data migration.',
     'Handled administrative operations including internal documentation, vendor coordination, and cross-department communication.',
 ]:
@@ -284,7 +284,7 @@ section('Skills &amp; Interests')
 
 skill_lines = [
     ('Technical',
-     'Python, Java, JavaScript, React, Vue 3, Tailwind CSS, Vite, Inertia.js'
+     'Python, Java, JavaScript, React, Vue 3, Tailwind CSS, Vite, Inertia.js; '
      'Node.js, Express.js, Laravel, Supabase; MySQL, MongoDB; Pandas, NumPy, Scikit-learn, TensorFlow; '
      'Git, Selenium, Cypress, Mocha'),
     ('Design',
